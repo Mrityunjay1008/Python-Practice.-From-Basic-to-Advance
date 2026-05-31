@@ -1,0 +1,15 @@
+years = [1996, 2000,2007, 2011, 2015, 2000, 2400, 1800, 1900, 2100]
+
+def check_leap_year(year):
+    if year <= 0:
+        return False;
+    if year % 4 == 0 and (year % 100 != 0 or year % 400 == 0):
+        return True
+    return False
+ 
+def print_leap_year(*args):
+    for year in args:
+        print(f"{year} is a {""if check_leap_year(year) else "not "}leap year")
+    
+print_leap_year(*years)
+This is appending to a file
