@@ -1,0 +1,67 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "name": "Gopal Sharma",
+            "email": "gopal.sharma@example.com",
+            "password": "gopal123",
+            "isLoggedIn": true,
+            "age": 16,
+            "isActive": true
+        },
+        {
+            "id": 2,
+            "name": "Rahul Kumar",
+            "email": "rahul.kumar@example.com",
+            "password": "rahul123",
+            "isLoggedIn": false,
+            "age": 17,
+            "isActive": false
+        },
+        {
+            "id": 3,
+            "name": "Priya Singh",
+            "email": "priya.singh@example.com",
+            "password": "priya123",
+            "isLoggedIn": true,
+            "age": 15,
+            "isActive": true
+        },
+        {
+            "id": 4,
+            "name": "Aman Verma",
+            "email": "aman.verma@example.com",
+            "password": "aman123",
+            "isLoggedIn": false,
+            "age": 18,
+            "isActive": true
+        },
+        {
+            "id": 5,
+            "name": "Neha Gupta",
+            "email": "neha.gupta@example.com",
+            "password": "neha123",
+            "isLoggedIn": true,
+            "age": 16,
+            "isActive": false
+        },
+        {
+            "id": 6,
+            "name": "Neha Gupta",
+            "email": "neha.gupta@example.com",
+            "password": "neha123",
+            "isLoggedIn": true,
+            "age": 16,
+            "isActive": true
+        },
+        {
+            "id": 7,
+            "name": "Mrityunjay Sharma",
+            "email": "mrityunjaysharma@gmail.com",
+            "password": "12345678",
+            "isLoggedIn": true,
+            "age": 21,
+            "isActive": true
+        }
+    ]
+}
