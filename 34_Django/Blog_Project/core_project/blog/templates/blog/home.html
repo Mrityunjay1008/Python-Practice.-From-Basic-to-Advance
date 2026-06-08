@@ -10,7 +10,7 @@
      <article class="glass card-3d">
         <div class="article-metadata">
             <a href="#">{{post.author}}</a>
-            <small>{{post.date_posted}}</small>
+            <small>{{post.date_posted|date:"M d, Y"}}</small>
         </div>
         <h2 class="article-title">{{post.title}}</h2>
         <p class="article-content">{{post.content}}.</p>
