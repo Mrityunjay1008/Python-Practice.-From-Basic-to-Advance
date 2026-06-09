@@ -1,0 +1,60 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>user_register - Modern Blog</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="{% static "users/register.css" %}">
+</head>
+<body>
+
+    <div class="auth-wrapper">
+        <div class="auth-card">
+            <h2 class="auth-title">Create Account</h2>
+            <p class="auth-subtitle">Join us to start writing and sharing your posts</p>
+
+            {% if messages %}
+                <ul class="messages">
+                    {% for message in messages %}
+                        <li class="message-item">{{ message }}</li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
+
+            <form method="POST" action="{% url 'user_register' %}">
+                {% csrf_token %}
+                
+                <div class="form-group">
+                    <input type="text" name="username" id="username" class="form-input" placeholder=" " required autocomplete="username">
+                    <label for="username" class="form-label">Username</label>
+                </div>
+
+                <div class="form-group">
+                    <input type="email" name="email" id="email" class="form-input" placeholder=" " required autocomplete="email">
+                    <label for="email" class="form-label">Email Address</label>
+                </div>
+
+                <div class="form-group">
+                    <input type="password" name="password" id="password" class="form-input" placeholder=" " required autocomplete="new-password">
+                    <label for="password" class="form-label">Password</label>
+                </div>
+
+                <div class="form-group">
+                    <input type="password" name="password_confirm" id="password_confirm" class="form-input" placeholder=" " required autocomplete="new-password">
+                    <label for="password_confirm" class="form-label">Confirm Password</label>
+                </div>
+
+                <button type="submit" class="btn-submit">Sign Up</button>
+            </form>
+
+            <div class="auth-footer">
+                Already have an account? <a href="{% url 'user_login' %}">Sign in</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
